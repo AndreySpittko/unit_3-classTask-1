@@ -1,4 +1,4 @@
-package com.company.version_2;
+package com.company.enum_Position_withOneParam;
 
 public abstract class Person {
 
