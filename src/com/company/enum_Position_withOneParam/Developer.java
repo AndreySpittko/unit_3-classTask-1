@@ -1,4 +1,4 @@
-package com.company.version_1;
+package com.company.enum_Position_withOneParam;
 
 
 public class Developer extends Employee {

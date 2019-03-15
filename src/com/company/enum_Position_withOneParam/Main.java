@@ -1,9 +1,8 @@
-package com.company.version_1;
+package com.company.enum_Position_withOneParam;
 
 //import Service;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
