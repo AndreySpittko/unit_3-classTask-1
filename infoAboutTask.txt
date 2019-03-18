@@ -12,3 +12,6 @@ changeRate - to change the rate of employee
 bonuses – to calculate 10% from salary
 In the method main() create 3 objects of Employee type. Input information about them. 
 Display the total salary of all workers to screen
+
+
+

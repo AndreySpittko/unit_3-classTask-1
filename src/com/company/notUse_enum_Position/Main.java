@@ -8,27 +8,34 @@ import java.util.List;
 
 public class Main {
 
+
+    private static Service service = new Service();
+
     public static void main(String[] args) {
 
 
 /*
         Employee emp1 = new Employee("Volodimir", 1245569, 5, 210);
         Employee emp2 = new Employee("Oleh", 1240069, 11, 150);
-
-//        emp1.
-//        employeeService.
+        Employee emp3 = new Employee("Oleh", 1240069, 11, 150);
+        Employee emp4 = new Employee("Oleh", 1240069, 11, 150);
+        Employee emp5 = new Employee("Oleh", 1240069, 11, 150);
+        Employee emp6 = new Employee("Oleh", 1240069, 11, 150);
+        Employee emp7 = new Employee("Oleh", 1240069, 11, 150);
+        Employee emp8 = new Employee("Oleh", 1240069, 11, 150);
+        Employee emp9 = new Employee("Oleh", 1240069, 11, 150);
+        Employee emp10 = new Employee("Oleh", 1240069, 11, 150);
 
         Service sv = new Service();
         emp1.show();
-
         emp2.show();
-//        System.out.println(Employee.setTotalRate(););
-//        employee.totalCounter();
+
+        System.out.println(Employee.setTotalRate(););
+        employee.totalCounter();
 */
 
 
-//        Employee.setTotalRate();
-
+        // Create collection List<Employee>
         List<Employee> employees = new ArrayList<Employee>();
         employees.add(new Employee("Ivan", 1246662, 5, 220));
         employees.add(new Employee("Petro", 1246663, 7, 110));
@@ -40,10 +47,12 @@ public class Main {
         employees.add(new Employee("Katerina", 1246679, 19, 231));
         employees.add(new Employee("Viktoria", 1246649, 15, 195));
         employees.add(new Employee("Marharita", 1246659, 25, 64));
-        Collections.shuffle(employees);
+        Collections.shuffle(employees); //
         for(Employee emp : employees) {
             emp.show();
         }
+
+        service.showTotalSalary(service.totalSalary(employees));
 
         System.out.println("!!!!!!!!!!!!");
         System.out.println("!!!!!!!!!!!!");

@@ -27,8 +27,9 @@ public abstract class Person {
         this.name = name;
     }
 
-/*    protected void totalCounter() {
-        String s = String.format("Total persons: %d\n", counter.getCounter());
-        System.out.print(s);
-    }*/
+    @Override
+    public String toString() {
+        String s = String.format("Person name: %1$s!", getName());
+        return s;
+    }
 }

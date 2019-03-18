@@ -65,56 +65,29 @@ public class Employee extends Person {
     }
 
 
-    /**
-     * this method calculate salary of month
-     * @return
-     */
-    public /*static*/ double calculateSalary() {
-        double salary = getRate() * getHourOfMonth();
-        return salary;
+    @Override
+    public String toString() {
+        String s = String.format("Employee name: %1$s!", getName());
+        return s;
     }
 
-    /**
-     * this method calculate rate(bonus) to salary
-     * @return
-     */
-    public /*static*/ double changeRate(){
-            double changeBonus = 0;
-        if(getHourOfMonth() > 150) {
-            changeBonus = calculateSalary() * 0.1;
-//            newRate += changeBonus;
-        } else if(getHourOfMonth() > 200) {
-            changeBonus = calculateSalary() * 0.2;
-//            newRate += changeBonus;
-        } else{
-//            newRate += changeBonus;
-        }
-//        return newRate;
-        return changeBonus;
-    }
-
-    /**
-     * this method calculate salary  + rate(bonus)
-     * @return
-     */
-    public /*static*/ double sumSalary() {
-        double sumSalary = calculateSalary() + changeRate();
-        return  sumSalary;
-    }
-
+/*
     @Override
     public String toString() {
         return String.format("Employee name: %1$s!\t\tID-%5$d\n\t\tyour salary: %2$,.3f$,\t" +
                 "bonus: %3$,.3f$\n\t\tand your all salary with bonus = %4$,.3f$\n",
-                getName(), calculateSalary(), changeRate(), sumSalary(), getEmployeeID());
+                getName(), Service.calculateSalary(Employee emp), changeRate(), sumSalary(), getEmployeeID());
     }
+*/
 
     /**
      * this method show info about Employee
      */
+/*
     public void show() {
         System.out.println(toString());
     }
+*/
 
     /**
      * this method calculate amount Employee
